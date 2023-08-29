@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="navbar">
+      <div class="nav-left center-vertically">
+        <a class="button-textual" href="/">Home</a>
+      </div>
+      <div class="nav-right">
+        <a class="button-textual" href="./signup">Register</a>
+        <a class="button button-secondary" href="./signin">Signin</a>
+      </div>
+    </div>
+    <div class="main-content">
+        <div class="card">
+          <h1>JWT-AUTH</h1>
+          <p>Welcome!</p>
+          <form action="/signin" method="get">
+            <button class="button button-primary" type="submit">Signin</button>
+          </form>
+          <p>Don't have an account yet? <a class="button-textual" href="/signup">Register here!</a></p>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="navbar">
+      <div class="nav-left center-vertically">
+        <a class="button-textual" href="/">Home</a>
+      </div>
+      <div class="nav-right">
+        <a class="button-textual" href="./signup">Register</a>
+        <a class="button button-secondary" href="./signin">Signin</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="card">
+        <div id="login-status" class="card-header"></div>
+        <div class="card-body">
+          <h1>Login</h1>
+          <p>Login with your credentials.</p>
+          <form id="login-form" action="">
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+
+            <button class="button button-primary" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/login.js" defer></script>
+</body>
+</html>

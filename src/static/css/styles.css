@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #333333;
+  --secondary-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #808080;
+  --backgroud-color: #f2f2f2;
+}
+
+/* reset browser button styles */
+button, button:focus{
+  outline: none;
+  border: 1px solid transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--backgroud-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  display: inline-block;
+  text-decoration: unset;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.nav-right a:first-child {
+  margin-right: 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  width: 30rem;
+  border-radius: .75rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-header {
+  border-radius: .75rem .75rem 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-body {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.button {
+	border-radius: .375rem;
+	padding: 1rem;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.button-primary {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.button-primary:active {
+  outline: none;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button-secondary {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+.button-secondary:active {
+  outline: none;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+a.button-primary,
+a.button-secondary {
+  display: inline-block;
+  text-decoration: unset;
+}
+
+.button-textual {
+  color: var(--secondary-color);
+}
+
+.card .button-textual {
+  color: var(--text-color);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+/* TODO generalize these selectors (register/login) */
+#register-form,
+#login-form {
+  text-align: left;
+}
+
+#register-form label,
+#register-form button,
+#login-form label,
+#login-form button {
+  display: block;
+  margin-top: 16px;
+}
+
+#register-form input,
+#login-form input {
+  display: block;
+  width: 100%;
+}
+
+.registration-status-success {
+  background-color: green;
+}
+
+.registration-status-failed,
+.login-status-failed {
+  background-color: red;
+}
